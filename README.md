@@ -2,7 +2,7 @@
 
 ## 💻 Sobre o Projeto
 
-Este projeto é um clone da interface de usuário (UI) da página de login/cadastro do Instagram, desenvolvido como um exercício prático para aprimorar habilidades em **HTML** e **CSS**.
+Este projeto é um clone da interface de usuário (UI) da página de login do Instagram, desenvolvido como um exercício prático para aprimorar habilidades em **HTML** e **CSS**.
 
 O foco principal foi recriar o *layout* de forma fiel e garantir a **responsividade**, utilizando o **Flexbox** para a organização e distribuição dos elementos na tela, simulando a experiência do usuário em diferentes dispositivos (desktop e mobile).
 
