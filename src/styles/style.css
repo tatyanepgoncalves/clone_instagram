@@ -1,0 +1,226 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --bg: #0B1014;
+  --white: #fff;
+  --bg_input: rgb(34, 37, 41);
+  --border_input: #A8A8A8;
+  --bg_button: #3847B5;
+  --color_facebook: #0095F6;
+  --color_cadastrar: #708DFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--roboto);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+main, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+main {
+  height: 80vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.logo h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 100%;
+  font-family: var(--poppins);
+}
+
+
+.left-section {
+  display: none;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.form input {
+  padding: 0.75rem 1rem;
+  background-color: var(--bg_input);
+  border: 1px solid var(--border_input);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.form input::placeholder {
+  color: var(--border_input);
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.form button {
+  background-color: var(--bg_button);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--border_input);
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.entrar_facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color_facebook);
+  gap: 0.5rem;
+}
+
+.entrar_facebook span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.esqueceu_senha {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.esqueceu_senha a {
+  color: var(--white);
+}
+
+.tem_conta {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.tem_conta p {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.tem_conta p a {
+  color: var(--color_cadastrar);
+  font-weight: 700;
+}
+
+footer .container {
+  gap: 1.25rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 1.5rem;
+}
+
+.links a {
+  color: var(--border_input);
+  font-size: 12px;
+  line-height: 16px;
+  transition: all 0.4s ease;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.bottomFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.select p {
+  color: var(--border_input);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copy_section {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.copy_section p {
+  color: var(--border_input);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (width > 950px) {
+  main .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-section {
+    width: 800px;
+  }
+
+  .right-section .form {
+    width: 300px;
+  }
+}
